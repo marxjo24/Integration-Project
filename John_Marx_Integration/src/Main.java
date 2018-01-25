@@ -13,6 +13,7 @@ public class Main {
 		System.out.println("Enter Rate");
 		double rate = scan.nextDouble();
 		System.out.println("What is your name");
+		scan.nextLine();
 		String username = scan.nextLine();
 		System.out.println(username);
 		
