@@ -30,6 +30,19 @@ public class Main {
         + "division");
     System.out.println();
     
+    System.out.println("Enter a sentence");
+    scan.nextLine();
+    String sentence1 = scan.nextLine();
+    System.out.println(sentence1 + "is now upper cased: ");
+    System.out.println(sentence1.toUpperCase());
+    System.out.println();
+    System.out.println(sentence1 + "is now lower cased: ");
+    System.out.println(sentence1.toLowerCase());
+    System.out.println();
+    System.out.println("I removed the first 4 characters of the sentence using "
+        + "substing: ");
+    System.out.println(sentence1.substring(4));
+    System.out.println();
     System.out.println("Enter a interger between 1 and 20");
     double num3 = scan.nextDouble();
     num3 = (int) num3; // If user enters a double then this changes it to a int
