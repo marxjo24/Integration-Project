@@ -1,7 +1,7 @@
 
 public class CalculateVolume {
   
-  private double width;
+  private double width;  
   private double height;
   private double length;
   private double volume;

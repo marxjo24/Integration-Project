@@ -10,7 +10,7 @@ public class Main {
     System.out.println();
     
     System.out.println("Enter a interger");
-    double num1 = scan.nextDouble();
+    double num1 = scan.nextDouble();  //is a double just in case user enters decimal
     System.out.println((int)num1 + " Is Now A Double");
     System.out.println(num1);
     System.out.println();
