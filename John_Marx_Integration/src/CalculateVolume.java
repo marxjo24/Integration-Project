@@ -6,10 +6,10 @@ public class CalculateVolume {
   private double length;
   private double volume;
   
-  public void getWidth(double wid) {
+  public void getWidth(double wid) {   //This is a header
     width = wid;
   }
-  public void getHeight(double hei) {
+  public void getHeight(double hei) {  //The parameter is hei
     height = hei;
   }
   public void getLength(double leng) {
@@ -17,7 +17,8 @@ public class CalculateVolume {
   }
   public void getVolume() {
     volume = width*height*length;
-    System.out.println("The volume is " + volume);
+    System.out.println("The volume is " + volume); //System.out.println is the call
+    //("The volume is " + volume) is the argument
   }
  
 }
