@@ -3,7 +3,7 @@ import java.util.Scanner;
 // John Marx
 public class Main {
   public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
+   /* Scanner scan = new Scanner(System.in);
     System.out.println("Enter Your Name");
     String usersname = scan.next();
     System.out.println("Hello " + usersname);
@@ -88,8 +88,8 @@ public class Main {
     //Uses the CalculateVolume class to get the volume from the values that the
     //user gives
     System.out.println();
-    System.out.println("The program will now calculate volume using a seperate"
-        + " class.");
+    System.out.println("The program will now calculate volume using a seperate" 
+    + " class.");
     System.out.println();
     System.out.println("Enter the width for a box");
     CalculateVolume volume1 = new CalculateVolume();
@@ -101,6 +101,10 @@ public class Main {
     System.out.println();
     volume1.getVolume();  //Calculates the volume in separate class and 
                           //displays it
+    */
+    Bank h1 = new Bank(5);
+    h1.makeWithdraw(5);
+    h1.makeDeposit(10000);
     }
   }
 
