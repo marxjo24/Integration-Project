@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter Your Name");
+		/*System.out.println("Enter Your Name");
 		String usersname = scan.nextLine();
 		System.out.println("Hello " + usersname);
 		System.out.println();
@@ -113,14 +113,16 @@ public class Main {
 				"Enter the number of periods as a whole number, then enter the number of years as a whole number");
 		System.out.println("The coumpound interest is: $" + fakeBank1.getInterestOvertime(fakeBank1.getBankBalance(),
 				Bank.getInterest(), scan.nextInt(), scan.nextInt()));
-
+*/
 		System.out.println("Enter 5 integers to be placed into an array");
 		int s = 0;
+		
 		Integer[] newarray = new Integer[5];
 		while (s < 5) {
 			newarray[s] = scan.nextInt();
 			s++;
 		}
+		boolean test = false;
 		System.out.println("The program will now find the smallest value in the array");
 		int smallest = newarray[0];
 		for (int i = 1; i < newarray.length; i++) {
@@ -128,6 +130,7 @@ public class Main {
 				smallest = newarray[i];
 			}
 		}
+		
 		System.out.println("The smallest value is: " + smallest);
 
 		System.out.println("The program will now find the sum of the array");
@@ -143,7 +146,11 @@ public class Main {
 		for (int w = 0; w < newarray.length; w++) {
 			if (newarray[w] == value) {
 				System.out.println("The value " + value + " is found at index " + w);
+				test = true;
 			}
+		}
+		if(test == false) {
+			System.out.println("The value " + value + " was not found.");
 		}
 
 		System.out.println();
