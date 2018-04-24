@@ -1,4 +1,8 @@
 // John Marx
+/** This contains the code to calculate a volume of a box
+ * @author Marxj
+ *
+ */
 public class CalculateVolume {
 
   private double width;
