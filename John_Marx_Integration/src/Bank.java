@@ -1,4 +1,9 @@
 // John Marx
+/**
+ * Contains the code to simulate a bank.
+ * @author Marxj
+ *
+ */
 public class Bank {
   private double bankBalance;
   private static double interest;
@@ -7,6 +12,10 @@ public class Bank {
     bankBalance = 0.00;
   }
 
+  /**
+ * Creates a bank account with money in it specified by the mon parameter.
+ * @param mon the initial money amount.
+ */
   public Bank(double mon) {
     if (mon >= 0) {
       bankBalance = Math.round(mon * 100.0) / 100.0;
@@ -15,6 +24,10 @@ public class Bank {
     }
   }
 
+  /**
+ *Allows the user to set the bank balance. 
+ * @param mon is the amount to set the bank account to.
+ */
   public void setBankBalance(double mon) {
     if (mon >= 0) {
       bankBalance = Math.round(mon * 100.0) / 100.0;
