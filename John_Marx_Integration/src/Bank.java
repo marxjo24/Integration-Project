@@ -1,13 +1,13 @@
 // John Marx
 /**
  * Contains the code to simulate a bank.
- * @author Marxj
+ * @author John Marx
  *
  */
 public class Bank {
   private double bankBalance;
-  private static double interest;
-
+  private double interest;
+  
   public Bank() {
     bankBalance = 0.00;
   }
@@ -36,11 +36,17 @@ public class Bank {
     }
   }
 
-  public static void setInterest(double inter) {
-    if (inter > 0) {
-      interest = inter;
-    } else {
-      interest = 0.01;
+  public void setInterest(double inter) {  
+    boolean goodPercent = false;
+    while (goodPercent == false) {
+      if (inter <= 1 && inter > 0) {
+        interest = inter;
+        goodPercent = true;
+      } else {
+        System.out.println("Enter a valid interest PERCENT");
+        System.out.println("HINT: this percent is less than 1 and greater than 0");
+        inter = GoodDouble.getGoodDouble();
+      }
     }
   }
 
@@ -48,7 +54,7 @@ public class Bank {
     return bankBalance;
   }
 
-  public static double getInterest() {
+  public double getInterest() {
     return interest;
   }
 
@@ -68,8 +74,8 @@ public class Bank {
   }
 
   public double getInterestOvertime(double prin, double rat, int numc, int yers) {
-    double newmoney = prin * Math.pow(1 + rat / numc, numc * yers);
-    double rnewmoney = Math.round(newmoney * 100.0) / 100.0;
-    return rnewmoney;
+    double newMoney = prin * Math.pow(1 + rat / numc, numc * yers);
+    double rNewMoney = Math.round(newMoney * 100.0)/100.0;
+    return rNewMoney;
   }
 }
