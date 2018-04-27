@@ -1,3 +1,9 @@
+//John Marx
+/** This contains the code to check if the entered double value is non-crashable. 
+ * @author John Marx
+ *
+ */
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
